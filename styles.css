@@ -1,0 +1,64 @@
+.header, .container {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-size: 60px;
+    background: linear-gradient(to left, #009965, #ec009e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.inputField {
+    padding: 10px;
+    width: 40%;
+    border: none;
+    border-radius: 20px;
+}
+.btn {
+    padding: 20px;
+    background-color: #009965;
+    border: none;
+    border-radius: 20px;
+}
+body {
+    background-image: url(morning3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-color: #009965;
+}
+.toDoAdded {
+    background: #eeaeca;
+    list-style-type: none;
+    height: 60px;
+    width: 50%;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    border-bottom: 1px solid #009965;
+    border-radius: 20px;
+}
+.toDoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.toDoCompleted {
+    background: #009965;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: line-through;
+    border-bottom: 1px solid #eeaeca;
+    transition: all 2s ease;
+}
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+}
